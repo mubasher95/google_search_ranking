@@ -1,0 +1,26 @@
+version: "3.10.12"
+
+services:
+
+  redis:
+    image: redis:7.0.11-alpine
+
+  app:
+    build: .
+    volumes:
+      - .:/django
+    ports:
+      - 8001:8000
+    container_name: django_container
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - redis
+
+  celery:
+    container_name: celery
+    build: .
+    command: celery -A google_search_ranking worker -l INFO
+    volumes:  
+      - .:/django
+    depends_on:
+      - redis
