@@ -22,29 +22,29 @@ A Django project to perform Google search ranking for a given URL and keywords u
 
 ## Project Structure
 
-google_search_ranking/
-|-- search_api/
-|   |-- __init__.py
-|   |-- admin.py
-|   |-- apps.py
-|   |-- creds.py
-|   |-- models.py
-|   |-- task.py
-|   |-- tests.py
-|   |-- urls.py
-|   `-- views.py
-|-- google_search_ranking/
-|   |-- __init__.py
-|   |-- asgi.py
-|   |-- celery.py
-|   |-- settings.py
-|   |-- urls.py
-|   `-- wsgi.py
-|-- manage.py
-|-- README.md
-|-- requirements.txt
-|-- Dockerfile
-|-- docker-compose.yml
+	google_search_ranking/
+	|-- search_api/
+	|   |-- __init__.py
+	|   |-- admin.py
+	|   |-- apps.py
+	|   |-- creds.py
+	|   |-- models.py
+	|   |-- task.py
+	|   |-- tests.py
+	|   |-- urls.py
+	|   `-- views.py
+	|-- google_search_ranking/
+	|   |-- __init__.py
+	|   |-- asgi.py
+	|   |-- celery.py
+	|   |-- settings.py
+	|   |-- urls.py
+	|   `-- wsgi.py
+	|-- manage.py
+	|-- README.md
+	|-- requirements.txt
+	|-- Dockerfile
+	|-- docker-compose.yml
 
 
 Installation
